@@ -1,0 +1,84 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Raleway";
+  }
+
+  
+  .main-div {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #FFFBFB;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    
+  }
+  
+  .form-div{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFBFB;
+  
+  
+  }
+  
+  .sub-div {
+  
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  .mini-div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin: 5px;
+  }
+  
+  .user-inputs {
+    margin: 5px;
+    width: 200px;
+    height: 25px;
+    padding-inline: 4px;
+  
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #FFFBFB;
+  }
+  
+  
+  .big-input{
+    margin: 5px;
+    height: 25px;
+    padding-inline: 4px;
+  
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #FFFBFB;
+  
+  
+  }
+  
+  .submit-input{
+    margin: auto;
+    height: 30px;
+    width: 80px;
+    margin-top: 20px;
+    background-color: #000080;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  
+  /* Page Indicators */
+  
+  li{
+    display: inline-block;
+  }

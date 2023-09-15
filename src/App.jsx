@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Register from './components/register'
+import Login from './components/login'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,21 +15,14 @@ function App() {
     let res = await getReq.json()
     setschemearray(res)
     console.log(res)
-
-
   }
-
   return (
     <>
-      <button onClick={handleSubmit}>Get Data</button>
-      <ul>
-        {schemearray.map((item, index) => (
-          <>
-            <li >{item['name']} {item['max_deduction']}</li>
-      
-          </>
-        ))}
-      </ul>
+
+      <div className="app">
+        {/* <Login /> */}
+        <Register />
+      </div>
     </>
   )
 }

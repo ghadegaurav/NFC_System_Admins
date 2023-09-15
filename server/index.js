@@ -39,7 +39,10 @@ app.use(express.urlencoded({ extended: true }))
 
 mon.connect(DB, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    writeConcern: {
+      w: 'majority',
+    },
 }).then(() => { console.log("yeeeeeeeeeeeeee") }).catch(err => { console.log() })
 
 app.use('/', web);
