@@ -1,0 +1,200 @@
+aside {
+    position: fixed;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    width: 310px;
+    padding: 20px 10px;
+    height: 100vh;
+    background-color: #2b2b2b;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 5px -1px black;
+    overflow-y: scroll;
+    margin-top: 54px;
+  }
+  
+  aside::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  aside::-webkit-scrollbar-track {
+    background-color: #2b2b2b;
+    border-radius: 10px;
+  }
+  
+  aside::-webkit-scrollbar-thumb {
+    background-color: rgb(59, 59, 59);
+    border-radius: 10px;
+  }
+  
+  .sidebar-elements {
+    width: 100%;
+    margin: 5px auto;
+  }
+  
+  .sidebar-elements .btn-click {
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    cursor: pointer;
+    color: rgb(246, 248, 199);
+    background-color: #2b2b2b;
+  }
+  
+  .sidebar-elements .btn-click a {
+    text-decoration: none;
+    color: rgb(246, 248, 199);
+  }
+
+  .sidebar-elements .btn-click:hover {
+    background-color: rgb(59, 59, 59);
+  }
+  
+  .sidebar-elements .btn-click img {
+    width: 35px;
+    height: 100%;
+    margin-right: 20px;
+    margin-left: 5px;
+  }
+  
+  .sidebar-elements div > img {
+    width: 25px;
+    margin-right: 25px;
+    opacity: 0.2;
+  }
+  
+  .sidebar-elements > .open-sub-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: height-in-fade 300ms ease-in-out;
+    margin-left: 8px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    overflow-y: hidden;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .closed {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 8px;
+    height: 0;
+    overflow-y: hidden;
+    animation: height-out-fade 300ms ease-in-out;
+  }
+  
+  @keyframes height-in-fade {
+    from {
+      padding: 0 0;
+      opacity: 0;
+      left: -10px;
+      height: 0;
+    }
+    to {
+      padding: 8px 10px;
+      height: 41px;
+      opacity: 1;
+      left: 0;
+    }
+  }
+  
+  @keyframes height-out-fade {
+    from {
+      padding: 8px 10px;
+      opacity: 1;
+      height: 41px;
+      left: 0;
+    }
+    to {
+      padding: 0 10px;
+      opacity: 0;
+      height: 0;
+      left: -10px;
+    }
+  }
+  
+  .sidebar-elements > div:hover {
+    background-color: rgb(59, 59, 59);
+  }
+  
+  .middle-dash {
+    padding-top: 10px;
+    /* width: 1000px; */
+    margin-left: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .middle-dash > img {
+    width: 60px;
+    height: 90px;
+    margin-top: 72px;
+  }
+
+  #welcome-text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 80px 0 20px 10px;
+    padding-top: 25px;
+  }
+
+  .bottom-dash  > img{
+    margin-top: 15px;
+    margin-left: 425px;
+    border-radius: 20px;
+  }
+  
+  /* #chart-container {
+    padding: 30px;
+    width: 100%;
+    height: 350px;
+    box-shadow: 0 0 5px -1px black;
+    border-radius: 20px;
+  } */
+  
+  /* .right-dash {
+    width: 500px;
+    margin: 20px 0 0 40px;
+  } */
+  
+  /* .actual-calendar {
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    box-shadow: 0 0 5px -1px black;
+    margin: 80px 30px 0 0;
+  }
+  
+  .actual-calendar div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .actual-calendar div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .today {
+    border-radius: 50%;
+    background-color: rgb(59, 59, 59);
+    color: white;
+  } */
+  

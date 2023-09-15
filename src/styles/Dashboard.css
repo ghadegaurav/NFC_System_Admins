@@ -1,0 +1,36 @@
+.dash {
+  margin: 80px 0 20px 25vw;
+}
+
+.charts {
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows with the first row having one column and the second row having three columns */
+  grid-template-columns: 1fr 1fr 1fr; /* Three columns in the second row */
+  gap: 10px;
+  background: cyan;
+}
+
+.grid-item {
+  padding: 10px;
+  grid-column: 1/4;
+  /* height: 40vh; */
+  width: 60vw;
+  background: cyan;
+
+}
+
+/* Style for the second row (optional) */
+.second-row-item {
+  padding: 10px;
+  height: 40vh;
+  width: 30vw;
+  background: cyan;
+
+}
+
+/* #myChart{
+    display: block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+} */
